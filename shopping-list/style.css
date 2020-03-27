@@ -16,7 +16,7 @@ body {
 header {
    text-align: center;
    margin: 0px;
-   padding-bottom: 10px;
+   padding: 10px;
    background-color:#4A4F56;
 }
 
@@ -28,53 +28,47 @@ form {
    width: 60%;
    margin-left: auto;
    margin-right: auto;
-   padding-bottom: 5%;
+   padding-bottom: 4%;
    transition: all .1s ease-in;
 }
+
 .wrapper {
    list-style: none;
 }
+
 ul {
    margin: 20px 0;
 }
+
 li {
-   padding: 20px 0 20px 10px;
+   padding: 0;
    color: white;
    font-size: 1.2em;
+}
+
+label {
+   display: block;
+   padding: 20px;
    cursor: pointer;
 }
-label {
-   padding-left: 10px;
+
+p {
+   display: inline;
 }
-.shoplist_salt::after {
-   content: "(for the next lessons about CSS)";
+
+.shoplist_text {
    font-size: 14px;
    padding-left: 10px;
 }
-.shoplist_apple::after {
-   content: "(for more CSS manipulations)";
-   font-size: 14px;
-   padding-left: 10px;
-}
-.shoplist_orang::after {
-   content: "(because they are awesome)";
-   font-size: 14px;
-   padding-left: 10px;
-}
-.shoplist_plates::after {
-   content: "(hm... they always disappear)";
-   font-size: 14px;
-   padding-left: 10px;
-}
-.shoplist_sake::after {
-   content: "^_^ (for my friends)";
-   font-size: 14px;
-   padding-left: 10px;
+
+.shoplist_text p::after {
+   content: "";
 }
 
 .wrapper li:nth-child(odd) {
    background:#88839E;
 }
+
 .wrapper li:nth-child(even) {
    background: #736F86;
 }
@@ -91,6 +85,7 @@ ul li:hover {
    border-top: 2px solid #ffffff;
    border-bottom: 2px solid #ffffff;
 }
+
 ul li:active {
    background-color: #EB7E7F;
    border-top: 2px solid #ffffff;
@@ -102,7 +97,7 @@ ul li:active {
    height: 20px;
    vertical-align: middle;
 }
-.wrapper [type="checkbox"]:checked + span {
+.wrapper [type="checkbox"]:checked + p {
    text-decoration: line-through;
    color: #9CA0B5;
 }
