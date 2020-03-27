@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping listt</title>
+    <title>Shopping listt</title>    
+    <link rel="icon" href="favicon.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -11,35 +12,42 @@
       <h1>CSS Diner Shopping List</h1>
       <h3>Lets's go to the mall!</h3>
     </header>
-    <article>
-      <ul class="wrapper">
-        <li>
-          <input type="checkbox" class="checkbox" id="A lot of pickles"/>
-          <label for="A lot of pickles">A lot of pickles (for the next lessons about CSS)</label>
-        </li>
-        <li>
-          <input type="checkbox" class="checkbox" id="10 apple" />
-          <label for="10 apple">10 apple (for more CSS manipulations)</label>
-        </li>
-        <li>
-          <input type="checkbox" class="checkbox" id="20 orange" />
-          <label for="20 orange">20 orange (because they are awesome)</label>
-        </li>
-        <li>
-          <input type="checkbox" class="checkbox" id="13 plates" />
-          <label for="13 plates">13 plates (hm... they always disappear)</label>
-        </li>
-        <li>
-          <input type="checkbox" class="checkbox" id="15 bentos" />
-          <label for="15 bentos">15 bentos</label>
-        </li>
-        <li>
-          <input type="checkbox" class="checkbox" id="1 bottle of Sake"/>
-          <label for="1 bottle of Sake">1 bottle of Sake ^_^ (for my friends)</label>
-        </li>
-      </ul>
-
-      <p>Bon appetit :)</p>
-    </article>
+    <main>
+      <form action="#">
+        <ul class="wrapper">
+          <li>
+            <label>
+              <input type="checkbox"><span class="shoplist_salt"> A lot of pickles</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox"><span class="shoplist_apple"> 10 apple</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox"><span class="shoplist_orang"> 20 orange</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox"><span class="shoplist_plates"> 13 plates</span>
+            </label>
+          </li> 
+          <li>
+            <label>
+              <input type="checkbox"><span class="shoplist_bentos"> 15 bentos</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox"><span class="shoplist_sake"> 1 bottle of Sake</span>
+            </label>
+          </li>
+     </ul>
+        <button type="submit">Bon appetit :)</button>
+      </form>
+    </main>
   </body>
 </html>
