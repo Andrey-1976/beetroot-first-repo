@@ -33,7 +33,7 @@ body {
   list-style: none;
   border: 2px solid white;
   font-size: 0;
-  /* transition: all 0.1s ease-in; */
+  transition: all 0.1s ease-in;
   margin-bottom: 20px;
 }
 .text__city {
@@ -43,58 +43,65 @@ body {
   padding: 20px;
   text-align: center;
 }
-.text__city__lisbon {
+.text__city_lisbon {
   background-color: #3399cc;
   min-width: 33.33%;
 }
-.text__city__paris {
+.text__city_paris {
   background-color: #33cccc;
   min-width: 33.33%;
 }
-.text__city__belgrade {
+.text__city_belgrade {
   background-color: #996699;
   min-width: 33.33%;
 }
-.text__city__moscow {
+.text__city_moscow {
   background-color: #c24747;
   min-width: 25%;
 }
-.text__city__tel-aviv {
+.text__city_tel-aviv {
   background-color: #e2674a;
   min-width: 25%;
 }
-.text__city__cair {
+.text__city_cair {
   background-color: #ffcc66;
   min-width: 25%;
 }
-.text__city__new-york {
+.text__city_new-york {
   background-color: #99cc99;
   min-width: 25%;
 }
-.text__city__new-dehli {
+.text__city_new-dehli {
   background-color: #669999;
   min-width: 25%;
 }
-.text__city__san-francisco {
+.text__city_san-francisco {
   background-color: #cc6699;
   min-width: 50%;
 }
-.text__city__tokyo {
+.text__city_tokyo {
   background-color: #339966;
   min-width: 25%;
 }
-.text__city__sydney {
+.text__city_sydney {
   background-color: #666699;
   min-width: 100%;
 }
 .degree {
   color: #dfefdf;
 }
-.column .text__city:hover {
+/* .column .text__city:hover {
    opacity: 0.4;
-   transition: all 0.1s ease-in;
+} */
+.column:hover > .text__city {
+  opacity: 0.6;
 }
-
+.column .text__city:hover {
+  opacity: 1;
+}
+.column .text__city:active {
+  background: rgba(92, 86, 95, 0.1);
+}
 .text__final {
   font-size: 16px;
 }
