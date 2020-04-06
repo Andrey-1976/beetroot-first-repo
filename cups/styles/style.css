@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Miso Bold";
+  src: url("../assets/font/miso-bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../assets/font/latolight.woff2") format("woff2"),
+    url("../assets/font/latolight.woff") format("woff"),
+    url("../assets/font/latolight.ttf") format("truetype");
+}
+
+:root {
+  --first-font: "Miso Bold", serif;
+  --sec-font: "Lato", serif;
+
+  --title-size: 53px;
+  --name-size: 56px;
+  --text-size: 20px;
+
+  --bg-color: #e0b265;
+  --color-card: #ffffff;
+  --color-price: #02995b;
+  --color-text: #333333;
+  --color-shadow: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 100%;
+}
+
+.menu__list {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+.menu__card {
+  min-width: 30%;
+  background-color: var(--color-card);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+  transition: padding 0.3s;
+}
+.menu__card:hover {
+  padding: 40px 0;
+}
+.menu__price {
+  color: var(--color-price);
+  font-family: var(--first-font);
+  font-size: var(--title-size);
+  margin-bottom: 20px;
+}
+.menu__item {
+  width: 135px;
+  height: 77px;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.menu__cup,
+.menu__bean {
+  position: absolute;
+  margin-left:10px;
+}
+.menu__bean {
+  left: 38%;
+  top: 24%;
+  margin-left: 0;
+  opacity: 0.2;
+}
+.menu__name {
+  font-family: var(--first-font);
+  font-size: var(--name-size);
+  width: 156px;
+  height: 116px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  font-family: var(--sec-font);
+  font-size: var(--text-size);
+  color: var(--color-text);
+}
+.menu__text {
+  padding-top: 20px;
+}
