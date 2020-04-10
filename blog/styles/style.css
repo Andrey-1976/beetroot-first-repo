@@ -31,8 +31,7 @@ body {
   align-items: center;
 }
 .block {
-  max-width: 1120px;
-  margin: 90px auto;
+  padding: 90px 195px;
 }
 .blog__list {
   list-style: none;
@@ -45,7 +44,33 @@ body {
   height: 540px;
   margin-right: 20px;
   background-color: var(--bg-card);
-  position: relative;
+}
+.blog__items:nth-child(2) {
+  margin-right: 0;
+}
+.blog__items:last-child {
+  margin-right: 0px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.blog__cards {
+  padding: 28px;
+}
+.blog__cards--no-data {
+  padding-top: 62px;
+}
+.blog__data {
+  color: var(--bg-color);
+  font-size: var(--fs-data);
+  padding: 0 0 21px;
+}
+.blog__title {
+  font-size: var(--fs-title);
+}
+.blog__avatar {
+  padding-top: 70px;
 }
 .blog__items-first {
   width: 740px;
@@ -54,6 +79,7 @@ body {
   background: url(../assets/images/photo1.png) center no-repeat;
   color: var(--color-title);
   font-size: var(--fc-first);
+  position: relative;
 }
 .blog__items-first::after {
   content: "";
@@ -64,68 +90,30 @@ body {
   left: 0;
   right: 0;
 }
-.blog__items:nth-child(2) {
-  margin-right: 0;
-}
-.blog__items:last-child {
-  margin-right: 0px;
-}
-.blog__cards {
-  position: relative;
-  border-bottom: 1px solid transparent;
-}
-.blog__data {
-  color: var(--bg-color);
-  font-size: var(--fs-data);
-  position: absolute;
-  top: 279px;
-  left: 27px;
-}
-.blog__title {
-  font-size: var(--fs-title);
-  position: absolute;
-  top: 314px;
-  left: 27px;
-  right: 27px;
-  bottom: 149px;
-}
 .blog__cards-first {
-  position: relative;
+  padding: 390px 265px 40px 47px;
 }
 .blog__data-first {
-  position: absolute;
-  top: 405px;
-  left: 45px;
-  z-index: 1;
+  font-size: var(--fs-data);
+  color: var(--color-title);
+  padding-bottom: 23px;
 }
 .blog__title-first {
-  position: absolute;
   font-size: var(--fc-first);
-  left: 45px;
-  right: 265px;
-  top: 440px;
-  z-index: 1;
-}
-.blog__avatar {
+  color: var(--color-title);
   position: relative;
-  display: inline-block;
-  left: 27px;
-  top: 210px;
-}
-a {
-  color: black;
-  text-decoration: none;
+  z-index: 1;
 }
 a .blog__title-first {
   color: var(--color-title);
   text-decoration: none;
 }
-.blog__logo {
+.blog__loader {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.blog__logo-text {
+.blog__loader-text {
   color: var(--color-data);
   font-size: var(--fs-data);
   margin-left: 13px;
